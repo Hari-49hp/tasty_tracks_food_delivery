@@ -1,0 +1,41 @@
+<link rel="stylesheet" href='/static/css/login.css' />
+<div class="register">
+    <div class="register__content-logo">
+        <img src="/static/img/logo.png" alt="login" class="register__logo">
+    </div>
+    <div class="register__container-log">
+        <form class="register__login-form" action="/login" method="POST">
+            <label for="nombre" class="login-form__label login-form__label--one">Username or Phone Number
+                <input type="text" id="nombre" name="nombre" class="login-form__input">
+            </label>
+            <label for="password" class="login-form__label login-form__label--two">Passsword
+                <input type="password" id="password" name="password" class="login-form__input">
+            </label>
+            <div>
+                <input type="checkbox" id="recordar" class="login-form__checkbox">
+                <label for="recordar" class="login-form__checkbox-label">Save it</label>
+            </div>
+            <button class="btn btn--login" type="submit">Login</button>
+        </form>
+        <div class="register__qr-content">
+            <p class="qr-content__title">OR With a QR Code</p>
+            <img src="https://campus.mined.edu.ni/pluginfile.php/236788/mod_resource/content/3/Conoci%C3%A9ndonos%21%20.png"
+                alt="qr" class="qr-content__qr">
+            <p class="qr-content__parr">Use <a href="#" class="qr-content__link">FoodTrack</a> app to login with QR</p>
+        </div>
+    </div>
+    <div class="register__links">
+        <a href="#" class="links__option links__option--help">Help, I can't login</a>
+        <p class="links__option links__option--text">Don't have a account in FoodTrack ?</p>
+        <a href="#" class="links__option links__option--create">Create free account here</a>
+    </div>
+</div>
+
+<!-- 
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %} -->
